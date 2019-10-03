@@ -30,11 +30,17 @@ describe('multiply', () => {
   // write tests! <================================================
 
   // multiplies positive number correctly
-  it('adds positive numbers correctly', () => {
-    
+  it('multiplies positive numbers correctly', () => {
+    expect(helpers.multiply(3, 5)).toBe(15);
   })
   // throws error if fed something that's not a number
+  it("throws error if fed something that's not a number", () => {
+    expect(() => helpers.multiply('yes', 'no')).toThrow()
+  })
   // returns null if fed a single argument
+  it("returns null if fed a single argument", () => {
+    expect(helpers.multiply(1)).toBe(null);
+  })
   // returns null if fed no argument
   // multiplies negative numbers correctly
 });
