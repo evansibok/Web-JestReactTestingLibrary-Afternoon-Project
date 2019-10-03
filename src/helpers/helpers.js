@@ -25,7 +25,9 @@ export function multiply(...numbers) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('numbers required');
   }
+
   return a * b;
+  
 }
 
 

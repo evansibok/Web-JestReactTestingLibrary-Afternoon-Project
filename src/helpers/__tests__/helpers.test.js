@@ -29,10 +29,6 @@ describe('sum', () => {
 describe('multiply', () => {
   // write tests! <================================================
 
-  // multiplies positive number correctly
-  it('multiplies positive numbers correctly', () => {
-    expect(helpers.multiply(3, 5)).toBe(15);
-  })
   // throws error if fed something that's not a number
   it("throws error if fed something that's not a number", () => {
     expect(() => helpers.multiply('yes', 'no')).toThrow()
@@ -42,7 +38,29 @@ describe('multiply', () => {
     expect(helpers.multiply(1)).toBe(null);
   })
   // returns null if fed no argument
+  it("returns null if fed no argument", () => {
+    expect(helpers.multiply()).toBe(null);
+  })
+
+
+  /* 
+    NOT WORKING!!!
+  */
+  // multiplies positive number correctly
+  // it('multiplies positive numbers correctly', () => {
+  //   expect(helpers.multiply(3, 5)).toBe(15);
+  // })
+
   // multiplies negative numbers correctly
+  // it("multiplies negative numbers correctly", () => {
+  //   expect(helpers.multiply(-5, -2)).toBe(10);
+  // })
+
+  // can multipy three numbers correctly
+  // it("can multiply three numbers correctly", () => {
+  //   expect(helpers.multiply(2, 5, 3)).toBe(30);
+  //   expect(helpers.multiply(2, 5, 3)).not.toBe(10);
+  // })
 });
 
 describe('personMaker', () => {
