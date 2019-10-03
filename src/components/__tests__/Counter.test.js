@@ -51,14 +51,14 @@ describe('Counter component', () => {
 
   it('can reset the count clicking reset', () => {
     // implement
-    // const resetButton = tools.queryByText('resetButton');
+    const resetButton = tools.queryByTestId('resetButton');
 
-    // rtl.fireEvent.click(resetButton);
-    // expect(tools.queryByText(/1/)).not.toBeInTheDocument();
-    // expect(tools.queryByText(/0/)).toBeInTheDocument();
+    rtl.fireEvent.click(resetButton);
+    expect(tools.queryByText(/1/)).not.toBeInTheDocument();
+    expect(tools.queryByText(/0/)).toBeInTheDocument();
 
-    // expect(tools.queryByText(/-1/)).not.toBeInTheDocument();
-    // expect(tools.queryByText(/0/)).toBeInTheDocument();
+    expect(tools.queryByText(/-1/)).not.toBeInTheDocument();
+    expect(tools.queryByText(/0/)).toBeInTheDocument();
   });
 
   it('prevents the count from going over an upper limit', () => {
