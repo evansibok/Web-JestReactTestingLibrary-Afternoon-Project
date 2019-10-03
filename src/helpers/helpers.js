@@ -17,17 +17,15 @@ export function sum(...numbers) {
   });
 }
 
-export function multiply(...numbers) {
+export function multiply(a, b) {
 
-  const enoughArgs = numbers.length > 1;
-  if(!enoughArgs) return null;
+  if (arguments.length < 2) return null;
 
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('numbers required');
   }
 
   return a * b;
-  
 }
 
 

@@ -39,6 +39,9 @@ describe('Counter component', () => {
 
   it('can decrement the count by one by clicking decrement', () => {
     // implement
+    // const decButton = tools.queryByTestId('decButton');
+
+    // rtl.fireEvent.click(decButton);
   });
 
   it('can reset the count clicking rest', () => {
