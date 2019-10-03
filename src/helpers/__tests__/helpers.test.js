@@ -28,6 +28,15 @@ describe('sum', () => {
 
 describe('multiply', () => {
   // write tests! <================================================
+
+  // multiplies positive number correctly
+  it('adds positive numbers correctly', () => {
+    
+  })
+  // throws error if fed something that's not a number
+  // returns null if fed a single argument
+  // returns null if fed no argument
+  // multiplies negative numbers correctly
 });
 
 describe('personMaker', () => {

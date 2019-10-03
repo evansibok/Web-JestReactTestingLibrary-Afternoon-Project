@@ -24,6 +24,7 @@ export function multiply(a, b) {
   return a * b;
 }
 
+
 export function personMaker(name, age) {
   return {
     id: uuid(),
