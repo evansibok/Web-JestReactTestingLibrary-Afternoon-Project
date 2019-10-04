@@ -18,11 +18,16 @@ export function sum(...numbers) {
 }
 
 export function multiply(a, b) {
+
+  if (arguments.length < 2) return null;
+
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('numbers required');
   }
+
   return a * b;
 }
+
 
 export function personMaker(name, age) {
   return {
